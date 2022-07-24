@@ -1,0 +1,31 @@
+:root {
+    --azul: #3772FF;
+    --verde: #36D6AD;
+    --coral: #FC7071;
+    --creme: #FCF0E3;
+    --cinza: #737380;
+    --cinza-claro: #BCBCBC;
+    --cinza-fundo: #F6F6F6;
+
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-secundaria: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+
+    
+}
+
+/* HEADER */
+
+.cabecalho {
+    background-image: url("img/bg-header.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 295px;
+}

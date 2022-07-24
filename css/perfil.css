@@ -1,0 +1,18 @@
+.cabecalho__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28vw;
+    padding: 3rem;
+}
+
+.nav__usuario {
+    padding-right: 2.5rem;
+}

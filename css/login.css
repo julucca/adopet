@@ -1,0 +1,14 @@
+.cabecalho {
+    background-image: url("../img/Patas.svg"), url("../img/bg-header.svg");
+    background-repeat: no-repeat;
+    background-size: 40vw, cover;
+    background-position: right top, left top;
+}
+
+.cabecalho__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28vw;
+    padding: 3rem;
+}
