@@ -16,16 +16,16 @@ body {
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5rem;  
+    line-height: 1.5rem;
+
+    background: url("img/forma-bg-1.svg") no-repeat;
+    background-position: left top;
 }
 
 /* Estilizando o header */
 
 .cabecalho {
-    background: url("img/bg-header.svg") no-repeat;
-    background-position: left top;
     padding: 3rem;
-    height: 80vh;
 }
 
 .cabecalho__item {
