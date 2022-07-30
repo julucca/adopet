@@ -1,4 +1,11 @@
-.cabecalho {
-    background: url("../img/patas.svg") no-repeat;
-    background-position: right top;
+/*estilização do formulário em cadastro.css*/
+
+.login__texto {
+    margin: 2rem 0;
+}
+
+.container-formulario__ancora {
+    color: var(--coral);
+    font-size: .75rem;
+    margin-top: .5rem;
 }

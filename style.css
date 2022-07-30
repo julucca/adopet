@@ -1,5 +1,6 @@
+@import url(./css/reset.css);
 @import url(./css/cadastro.css);
-
+@import url(./css/login.css);
 
 :root {
     --azul: #3772FF;
@@ -27,8 +28,7 @@ body {
     background-position: left top;
 }
 
-/* Estilizando o header */
-
+/*Estilizando o header*/
 .cabecalho {
     padding: 3rem;
 }
@@ -37,8 +37,7 @@ body {
     margin-right: 3rem;
 }
 
-/* Estilizando o footer */
-
+/*Estilizando o footer*/
 .rodape {
     color: var(--branco);
     text-align: center;

@@ -1,4 +1,4 @@
-.cadastro {
+.formulario {
     background-color: var(--branco);
     background-image: url("../img/patas.svg"), url("../img/forma-bg-1.svg"), url("../img/forma-bg-2-espelhada.svg");
     background-position: right top, left top, left 75%;
@@ -6,13 +6,13 @@
     color: var(--azul);
 }
 
-.cadastro__formulario {
+.formulario__conteudo {
     height: 620px; /*optei por definir em px para evitar sobreposição em telas menores*/
     margin: 2rem 1rem;
     text-align: center;
 }
 
-.cadastro__imagem {
+.formulario__logo {
     margin-bottom: 1rem;
 }
 
@@ -57,5 +57,6 @@
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 600;
-    padding: .5rem 2rem;
+    padding: .5rem 0;
+    width: 9rem;
 }
