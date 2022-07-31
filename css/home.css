@@ -1,9 +1,68 @@
+.home {
+    background-color: var(--branco);
+    background: url("../img/forma-bg-1.svg") no-repeat;
+    background-position: left top;
+    color: var(--azul);
+}
+
 .cabecalho {
     padding-top: 2.45rem;
 }
 
 .cabecalho__nav {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.galeria__texto {
+    line-height: 1.25rem;
+    margin: 1rem 4rem 2rem;
+    text-align: center;
+}
+
+.lista-pets__item {
+    background-color: var(--cinza-claro-bg);
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+    padding: 1.5rem;
+}
+
+.lista-pets__item:last-child {
+    margin-bottom: 0;
+}
+
+.item__imagem {
+    object-fit: contain;
+}
+
+.caracteristicas__nome {
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.caracteristicas__item {
+    color: var(--cinza);
+    font-size: .8rem;
+    line-height: 1.25rem;
+}
+
+.caracteristicas__local {
+    color: var(--cinza);
+    font-size: .75rem;
+    margin-top: 1.8rem; 
+}
+
+.caracteristicas__contato {
+    display: flex;
+}
+
+.contato__ancora {
+    color: var(--cinza);
+    font-family: var(--fonte-principal);
+    font-size: .6rem;
+    font-weight: 400;
+    margin-left: .5rem;
+    text-decoration: none;
 }

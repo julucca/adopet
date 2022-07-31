@@ -1,6 +1,8 @@
 @import url(./css/reset.css);
+@import url(./css/index.css);
 @import url(./css/cadastro.css);
 @import url(./css/login.css);
+@import url(./css/home.css);
 
 :root {
     --azul: #3772FF;
@@ -11,7 +13,7 @@
     --cinza: #737380;
     --cinza-claro: #BCBCBC;
     --cinza-fundo: #F6F6F6;
-    --cinza-input: #f7f7f7;
+    --cinza-claro-bg: #f7f7f7;
 
 
     --fonte-principal: 'Poppins', sans-serif;
