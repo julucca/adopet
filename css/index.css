@@ -1,25 +1,33 @@
-.inicial {
-    background-color: var(--azul);
-    background-image: url("../img/forma-bg-1.svg"), url("../img/forma-bg-2.svg"), url("../img/ilustration-cat-dog.svg");
-    background-repeat: no-repeat;
-    background-position: left top, right 40%, bottom 4rem left 30%;
-    color: var(--branco);   
+.body-inicial {
+    background:
+    url("../img/background-top.svg") no-repeat top left,
+    url("../img/background-right.svg") no-repeat right 40%,
+    url("../img/ilustration-cat-dog.svg") no-repeat bottom 4rem left 35%,
+    var(--azul);
+    color: var(--branco);
 }
 
-.destaque {
-    margin: 3rem;
+/*---style do cabecalho no arquivo style.css*/
+
+/*------------------------------main*/
+.chamada {
+    height: 640px;
+    margin: 6rem 3rem 0;
     text-align: center;
 }
 
-.destaque__titulo {
+.chamada__titulo {
     font-family: var(--fonte-secundaria);
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     font-weight: 500;
     margin: 2rem 0 1.5rem;
 }
 
-.destaque__botao {
-    height: 23rem; /*defini uma altura padrão para o final da página para evitar que a ilustração fique por baixo do botão*/
+.chamada__texto-tablet {
+    display: none;
+}
+
+.chamada__botao {
     margin-top: 1rem;
 }
 
@@ -30,11 +38,83 @@
     display: inline-block;
     margin: .5rem 0;
     padding: .5rem;
-    width: 65%;
+    width: 11rem;
 }
 
 .botao__texto {
     color: var(--branco);
     font-weight: 600;
     text-decoration: none;
+}
+
+
+/*---style do rodapé no arquivo style.css*/
+
+
+/*------------------------------TABLET*/
+
+@media screen and (min-width: 768px) {
+
+    .body-inicial {
+        background-position: top left, right 40%, bottom 4rem left 45%; 
+        background-size: 560px, 134px, 338px; 
+    }
+
+    .chamada {
+        height: 790px;
+        margin: 11rem 13rem 0;
+    }
+
+    .chamada__logo {
+        width: 251px;
+    }
+
+    .chamada__titulo {
+        font-family: var(--fonte-principal);
+        font-size: 1.75rem;
+        margin-top: 2.5rem;
+    }
+
+    .chamada__texto-mobile {
+        display: none;
+    }
+
+    .chamada__texto-tablet {
+        display: block;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .botao__item {
+        width: 20rem;
+    }
+
+    .botao__texto {
+        font-size: 1.1rem;
+    }
+}
+
+
+/*------------------------------DESKTOP*/
+
+@media screen and (min-width: 1440px) {
+
+    .body-inicial {
+        background-position: top left, right 40%, bottom 4rem left 48%; 
+    }
+
+    .chamada {
+        margin: 2.25rem auto 0;
+        width: 480px;
+    }
+
+    .chamada__texto-tablet {
+        display: inline;
+    }
+
+    .chamada__botao {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
