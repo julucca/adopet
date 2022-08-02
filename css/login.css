@@ -1,8 +1,4 @@
-/*estilização do formulário em cadastro.css*/
-
-.login__texto {
-    margin: 2rem 0;
-}
+/*---style do formulario no arquivo cadastro.css*/
 
 .container-formulario__ancora {
     color: var(--coral);
