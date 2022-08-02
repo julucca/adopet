@@ -1,14 +1,20 @@
-.formulario {
-    background-color: var(--branco);
-    background-image: url("../img/patas.svg"), url("../img/forma-bg-1.svg"), url("../img/forma-bg-2-espelhada.svg");
-    background-position: right top, left top, left 75%;
-    background-repeat: no-repeat;
+.body-formulario {
+    background:
+    url("../img/patas.svg") no-repeat top right,
+    url("../img/background-top.svg") no-repeat top left,
+    url("../img/background-left.svg") no-repeat left 75%,
+    var(--branco);
     color: var(--azul);
 }
 
+
+/*---style do cabecalho no arquivo style.css*/
+
+
+/*------------------------------main*/
 .formulario__conteudo {
-    height: 620px; /*optei por definir em px para evitar sobreposição em telas menores*/
-    margin: 2rem 1rem;
+    height: 680px;
+    margin: 5rem 1.5rem 0;
     text-align: center;
 }
 
@@ -16,7 +22,7 @@
     margin-bottom: 1rem;
 }
 
-.cadastro__texto {
+.conteudo__texto {
     margin-bottom: .5rem;
 }
 
@@ -59,4 +65,96 @@
     font-weight: 600;
     padding: .5rem 0;
     width: 9rem;
+}
+
+
+/*------------------------------TABLET*/
+
+@media screen and (min-width: 768px) {
+
+    .body-formulario {
+        background:
+        url("../img/patas.svg") no-repeat top right,
+        url("../img/background-top.svg") no-repeat top left,
+        url("../img/background-right.svg") no-repeat right 55%;
+        background-size: 214px, 560px, 115px;
+    }
+
+    .formulario__conteudo {
+        height: 830px;
+        margin: 9.75rem 7.5rem 0;
+    }
+
+    .formulario__logo {
+        width: 251px;
+    }
+
+    .conteudo__texto {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .container-formulario {
+        font-size: 1.125rem;
+        margin: 2rem auto;
+        text-align: center;
+        width: 344px;
+    }
+
+    .container-formulario__campo {
+        margin-top: .5rem;
+    }
+
+    .container-formulario__campo::placeholder {
+        font-size: .875rem;
+    }
+
+    .formulario__botao {
+        font-size: 1.125rem;
+        width: 10rem;
+    }
+
+}
+
+
+/*------------------------------DESKTOP*/
+
+@media screen and (min-width: 1440px) {
+
+    .formulario__conteudo {
+        margin: 2.25rem auto 0;
+        height: 830px;
+        width: 552px;
+    }
+
+    .formulario__logo {
+        margin-bottom: 2.5rem;
+    }
+
+    .conteudo__texto {
+        margin-bottom: 0;
+    }
+
+    .formulario {
+        margin-top: 3rem;
+    }
+
+    .container-formulario {
+        font-weight: 600;
+        width: 552px;
+    }
+
+    .container-formulario__campo::placeholder {
+        font-size: 1rem;
+    }
+
+    .campo--senha {
+        margin: .5rem auto 0;
+        width: 362px;
+    }
+    
+    .formulario__botao {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
