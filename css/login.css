@@ -1,7 +1,41 @@
-/*---style do formulario no arquivo cadastro.css*/
+/*---css do formulario no arquivo cadastro.css*/
+
+/*---css do cabecalho no arquivo style.css*/
+
+
+/*------------------------------main*/
+
+
+.login__texto {
+    margin: 2.4rem 0;
+}
 
 .container-formulario__ancora {
     color: var(--coral);
     font-size: .75rem;
     margin-top: .5rem;
+}
+
+
+/*---css do rodapé no arquivo style.css*/
+
+
+/*------------------------------TABLET*/
+
+@media screen and (min-width: 768px) {
+
+    .login__texto {
+        font-size: 1.125rem;
+        margin: 0;
+    } 
+}
+
+
+/*------------------------------DESKTOP*/
+
+@media screen and (min-width: 1440px) {
+
+    .login__texto {
+        margin: 1rem 0 4.5rem;
+    }
 }
