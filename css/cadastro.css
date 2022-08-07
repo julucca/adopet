@@ -1,14 +1,14 @@
 .body-formulario {
     background:
-    url("../img/patas.svg") no-repeat top right,
-    url("../img/background-top.svg") no-repeat top left,
-    url("../img/background-left.svg") no-repeat left 75%,
-    var(--branco);
+        url("../img/patas.svg") no-repeat top right,
+        url("../img/background-top.svg") no-repeat top left,
+        url("../img/background-left.svg") no-repeat left 75%,
+        var(--branco);
     color: var(--azul);
 }
 
 
-/*---style do cabecalho no arquivo style.css*/
+/*---css do cabecalho no arquivo style.css*/
 
 
 /*------------------------------main*/
@@ -30,7 +30,7 @@
     color: var(--cinza);
     display: flex;
     flex-direction: column;
-    margin: 1.5rem .5rem;
+    margin: 1.3rem 0;
 }
 
 .container-formulario__campo {
@@ -68,6 +68,9 @@
 }
 
 
+/*---css do rodapé no arquivo style.css*/
+
+
 /*------------------------------TABLET*/
 
 @media screen and (min-width: 768px) {
@@ -81,25 +84,33 @@
     }
 
     .formulario__conteudo {
+        width: 525px;
         height: 830px;
-        margin: 9.75rem 7.5rem 0;
+        margin: 9.75rem auto 0;
     }
 
     .formulario__logo {
+        margin-bottom: 2.5rem;
         width: 251px;
     }
 
     .conteudo__texto {
         font-size: 1.1rem;
         line-height: 1.6rem;
+        margin-bottom: 0;
     }
 
     .container-formulario {
         font-size: 1.125rem;
-        margin: 2rem auto;
+        margin: 1.5rem auto;
         text-align: center;
         width: 344px;
     }
+
+    .container-formulario:first-child {
+        margin-top: 2.5rem;
+    }
+    
 
     .container-formulario__campo {
         margin-top: .5rem;
@@ -123,17 +134,11 @@
 
     .formulario__conteudo {
         margin: 2.25rem auto 0;
-        height: 830px;
         width: 552px;
     }
 
     .formulario__logo {
-        margin-bottom: 2.5rem;
         width: 260px;
-    }
-
-    .conteudo__texto {
-        margin-bottom: 0;
     }
 
     .formulario {
