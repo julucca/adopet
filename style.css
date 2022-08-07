@@ -30,13 +30,28 @@ body {
 
 /*------------------------------header*/
 
-.cabecalho__nav {
-    margin: 3rem;
+.cabecalho {
+    margin: 3rem 2.75rem 0 3rem;
+}
+
+.cabecalho__menu { /*MUDANÇA DE nav alterei para menu*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     width: 100px;
 }
 
 .cabecalho__logo {
     display: none;
+}
+
+/*---header home.html e mensagem.html*/
+
+.cabecalho__usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.45rem 2.45rem 0 3rem;
 }
 
 
@@ -55,11 +70,13 @@ body {
 @media screen and (min-width: 768px) {
 
     .cabecalho {
+        margin-top: 4rem;
+    }
+
+    .cabecalho__completo {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        margin: 4rem 3rem 0;
-        width: 304px;
+        width: 19rem;
     }
 
     .cabecalho__logo {
@@ -68,18 +85,43 @@ body {
         width: 8rem;
     }
 
-    .cabecalho__nav {
-        margin: 0 0 0 3rem;
+    /*---header home.html e mensagem.html*/
+
+    .cabecalho__usuario {
+        margin-top: 3.25rem;
     }
+
+    .usuario__icone {
+        width: 3rem;
+    }
+
 }
 
 
 /*------------------------------DESKTOP*/
 
 @media screen and (min-width: 1440px) {
-
+    
     .cabecalho {
         margin-left: 10rem;
-        width: 255px;
+    }
+
+    .cabecalho__completo {
+        width: 251px;
+    }
+
+    .cabecalho__logo {
+        margin-right: 3rem;
+    }
+
+    /*---header home.html e mensagem.html*/
+
+    .cabecalho__usuario {
+        width: 70rem;
+        margin: 3rem auto;
+    }
+
+    .usuario__icone {
+        width: 3.5rem;
     }
 }
