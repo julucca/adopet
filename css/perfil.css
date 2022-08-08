@@ -1,9 +1,50 @@
-/*.cabecalho {
-    padding-top: 2.45rem;
+/*---css do cabecalho no arquivo style.css*/
+
+
+/*------------------------------main*/
+
+/*---css do main no arquivo mensagem.css*/
+
+.perfil__titulo {
+    width: 15.5rem;
 }
 
-.cabecalho__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}*/
+.mensagem__perfil {
+    color: var(--cinza);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.perfil__foto {
+    color: var(--coral);
+    font-size: .75rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container-perfil__campo::placeholder {
+    color: var(--cinza);
+}
+
+textarea {
+    box-sizing: border-box;
+    height: 11rem;
+}
+
+
+/*---css do rodapé no arquivo style.css*/
+
+
+/*------------------------------TABLET*/
+
+@media screen and (min-width: 768px) {
+    
+    .perfil__titulo {
+        width: 32.75rem;
+    }
+
+    textarea {
+        height: 6.5rem;
+    }
+}

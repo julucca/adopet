@@ -10,7 +10,8 @@
 
 .mensagem__titulo {
     line-height: 1.25rem;
-    margin: 0 1.5rem 1.5rem;
+    margin: 0 auto 1.5rem;
+    width: 226px;
 }
 
 .mensagem__formulario {
@@ -40,6 +41,10 @@
     color: var(--cinza-claro);
     font-family: var(--fonte-principal);
     font-size: .875rem;
+}
+
+textarea {
+    resize: none;
 }
 
 .formulario__botao {

@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoPet - Perfil</title>
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/perfil.css">
 </head>
-<body>
-    <header class="cabecalho">
-        <nav class="cabecalho__nav">
-            <div class="nav__menu">
-                <a href="#" class="cabecalho__item"><img src="../img/home.svg" alt="Ícone da home"></a>
-                <a href="#" class="cabecalho__item"><img src="../img/mail.svg" alt="Ícone de contato"></a>
-            </div>
-            <a href="#"><img src="../img/user-perfil.png" alt="Ícone do perfil de usuário"></a>
-        </nav>
+
+<body class="body-usuario body-mensagem">
+    
+    <header class="cabecalho__usuario">
+        <div class="cabecalho__completo">
+            <img src="../img/logo-branca.svg" alt="Logo da Adopet" class="cabecalho__logo">
+            <nav class="cabecalho__menu">
+                <a href="#"><img src="../img/home.svg" alt="Ícone da home"></a>
+                <a href="#"><img src="../img/mail.svg" alt="Ícone de contato"></a>
+            </nav>
+        </div>
+        <a href="#" ><img src="../img/user-perfil-formulario.png" alt="Foto de perfil do usuário" class="usuario__icone usuario__foto"></a>  
     </header>
+
+    <main>
+        <section class="mensagem">
+            <p class="mensagem__titulo perfil__titulo">Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.</p>
+
+            <form class="mensagem__formulario">
+                <h2 class="mensagem__perfil">Perfil</h2>
+
+                <div class="container-mensagem">
+                    <label>Foto</label>
+                    <div class="perfil__foto">
+                        <a href="#"><img src="../img/user-perfil-formulario.png" alt="Foto de perfil do usuario"></a>
+                        <p>Clique na foto para editar</p>   
+                    </div>
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="container-mensagem__campo container-perfil__campo" placeholder="Joana Magalhães">
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="container-mensagem__campo container-perfil__campo" placeholder="55 11 XXXXXXXXX">
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" class="container-mensagem__campo container-perfil__campo" placeholder="São Paulo">
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="sobre">Sobre</label>
+                    <textarea name="" id="sobre" class="container-mensagem__campo container-perfil__campo" required placeholder="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati."></textarea>
+                </div>
+
+                <button type="submit" class="formulario__botao">Salvar</button>
+                
+            </form>
+        </section>
+    </main>
+
     <footer class="rodape">
         <p>2022 - Desenvolvido por Alura.</p>
     </footer>
+
 </body>
 </html>
