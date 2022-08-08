@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoPet - Mensagem</title>
-    <link rel="stylesheet" href="../css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/mensagem.css">
 </head>
-<body>
-    <header class="cabecalho">
-        <nav class="cabecalho__nav">
-            <div class="nav__menu">
-                <a href="#" class="cabecalho__item"><img src="../img/home.svg" alt="Ícone da home"></a>
-                <a href="#" class="cabecalho__item"><img src="../img/mail.svg" alt="Ícone de contato"></a>
-            </div>
-            <a href="#"><img src="../img/user.svg" alt="Ícone do perfil de usuário"></a>
-        </nav>
+
+<body class="body-usuario body-mensagem">
+    
+    <header class="cabecalho__usuario">
+        <div class="cabecalho__completo">
+            <img src="../img/logo-branca.svg" alt="Logo da Adopet" class="cabecalho__logo">
+            <nav class="cabecalho__menu">
+                <a href="#"><img src="../img/home.svg" alt="Ícone da home"></a>
+                <a href="#"><img src="../img/mail.svg" alt="Ícone de contato"></a>
+            </nav>
+        </div>
+        <a href="#" ><img src="../img/user.svg" alt="Ícone do perfil de usuário" class="usuario__icone"></a>  
     </header>
+
+    <main>
+        <section class="mensagem">
+            <p class="mensagem__titulo">Envie uma mensagem para a pessoa ou instituição que está cuidando do animal:</p>
+
+            <form class="mensagem__formulario">
+                <div class="container-mensagem">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="container-mensagem__campo" placeholder="Insira seu nome completo">
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="container-mensagem__campo" placeholder="Insira seu telefone e/ou whatsapp">
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="animal">Nome do animal</label>
+                    <input type="text" id="animal" class="container-mensagem__campo" placeholder="Por qual animal você se interessou?">
+                </div>
+
+                <div class="container-mensagem">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id="mensagem" cols="30" rows="10" class="container-mensagem__campo" placeholder="Escreva sua mensagem."></textarea>
+                </div>
+
+                <button type="submit" class="formulario__botao">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
     <footer class="rodape">
         <p>2022 - Desenvolvido por Alura.</p>
     </footer>
+
 </body>
 </html>

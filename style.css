@@ -3,6 +3,7 @@
 @import url(./css/cadastro.css);
 @import url(./css/login.css);
 @import url(./css/home.css);
+@import url(./css/mensagem.css);
 
 :root {
     --azul: #3772FF;
@@ -117,8 +118,7 @@ body {
     /*---header home.html e mensagem.html*/
 
     .cabecalho__usuario {
-        width: 70rem;
-        margin: 3rem auto;
+        margin: 3rem 10.75rem 0 10rem;
     }
 
     .usuario__icone {
